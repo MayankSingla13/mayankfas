@@ -22,7 +22,7 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
-        <titleColor>#000066</titleColor>
+        <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
     <columns>
@@ -35,7 +35,7 @@
         <field>FULL_NAME</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>

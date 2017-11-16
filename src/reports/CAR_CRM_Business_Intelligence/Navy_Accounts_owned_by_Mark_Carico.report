@@ -7,7 +7,7 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Bureau__c</field>
@@ -48,7 +48,7 @@
             <value>9</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Navy</value>

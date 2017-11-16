@@ -53,7 +53,7 @@
         <field>Opportunity.Lifetime_Amount_multi_year__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <filter>
         <booleanFilter>((1 AND 2)) AND (3 OR 4 OR 5 OR 6) AND ((7 OR 8))</booleanFilter>

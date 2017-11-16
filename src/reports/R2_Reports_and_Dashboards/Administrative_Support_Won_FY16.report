@@ -73,7 +73,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>FK_$Account.Agency__c</field>
+        <field>FK_$Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Administrative Support Won, FY16</name>

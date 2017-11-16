@@ -108,7 +108,7 @@
             <value>GSS - Int Workplace Acq Ctr (IWAC),GSS - FSSI Print Management,GSS - IWAC Assisted Service</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Veterans Affairs</value>

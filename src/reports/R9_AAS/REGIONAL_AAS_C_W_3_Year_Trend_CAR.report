@@ -15,7 +15,7 @@
         <groupingColumn>FISCAL_YEAR</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>Account.Agency__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Account.Level_1__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -90,7 +90,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>REGIONAL - AAS C&amp;W 3 Year Trend CAR</name>

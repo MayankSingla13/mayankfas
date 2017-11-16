@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    
     <types>
         <members>AAS_Opportunity_And_Facilitation_Reports/FY16_Disqualified_Closed_Lost_Reasons</members>
 		<members>AAS_Opportunity_And_Facilitation_Reports/Open_AAS_Opps_Facilitation_in</members>
@@ -4971,5 +4970,4 @@
         <name>Report</name>
     </types>
     <version>39.0</version>
-    
 </Package>

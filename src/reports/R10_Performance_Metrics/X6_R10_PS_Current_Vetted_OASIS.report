@@ -616,10 +616,7 @@
         <field>Account.Active__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
-    </columns>
-    <columns>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Apply_to_Childcare__c</field>
@@ -628,7 +625,7 @@
         <field>Account.Bureau__c</field>
     </columns>
     <columns>
-        <field>Account.Bureau2__c</field>
+        <field>Account.Level_2__c</field>
     </columns>
     <columns>
         <field>Account.Bureau_Code__c</field>

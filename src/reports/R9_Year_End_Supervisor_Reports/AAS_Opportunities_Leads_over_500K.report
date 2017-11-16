@@ -24,7 +24,7 @@
         <textColor>#000000</textColor>
         <textSize>10</textSize>
         <title>AAS Opportunity Leads over 500K</title>
-        <titleColor>#000066</titleColor>
+        <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
     <columns>
@@ -34,7 +34,7 @@
         <field>Opportunity.Business_Line__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Bureau__c</field>

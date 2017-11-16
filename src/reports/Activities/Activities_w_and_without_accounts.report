@@ -32,7 +32,7 @@
         <field>Activity$Account.Bureau__c</field>
     </columns>
     <columns>
-        <field>Activity$Account.Agency__c</field>
+        <field>Activity$Account.Level_1__c</field>
     </columns>
     <format>Summary</format>
     <groupingsDown>

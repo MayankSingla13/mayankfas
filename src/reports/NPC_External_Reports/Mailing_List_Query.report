@@ -13,7 +13,7 @@
         <field>ADDRESS2_STATE</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -47,7 +47,7 @@
             <value>APO</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
             <value>,State and Local,General Services Administration</value>

@@ -6,7 +6,7 @@
         <masterLabel>Customer</masterLabel>
         <nullTreatment>n</nullTreatment>
         <otherBucketLabel>Other</otherBucketLabel>
-        <sourceColumnName>Account.Agency__c</sourceColumnName>
+        <sourceColumnName>Account.Level_1__c</sourceColumnName>
         <useOther>true</useOther>
         <values>
             <sourceValues>
@@ -152,7 +152,7 @@
         <field>Opportunity.Region_Opp__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Bureau__c</field>
@@ -193,7 +193,7 @@
             <value>VA - VA Schedule Programs</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Justice</value>

@@ -16,7 +16,7 @@
         <field>Account.Top_Level_Account__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Active__c</field>
@@ -26,9 +26,6 @@
     </columns>
     <columns>
         <field>Account.AccountCount__c</field>
-    </columns>
-    <columns>
-        <field>Account.Agency2__c</field>
     </columns>
     <columns>
         <field>Account.Account_Email__c</field>
@@ -73,7 +70,7 @@
         <field>Account.Classification__c</field>
     </columns>
     <columns>
-        <field>Account.Bureau2__c</field>
+        <field>Account.Level_2__c</field>
     </columns>
     <columns>
         <field>ADDRESS1_STREET</field>
@@ -107,13 +104,13 @@
             <value>Account.Carrier,Account.Partner,Account.Customer,Account.Vendor,Account.Bucket_Account</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency2__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>State</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency2__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>local</value>

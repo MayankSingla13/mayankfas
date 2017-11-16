@@ -18,7 +18,7 @@
         <field>OWNER_ROLE</field>
     </columns>
     <columns>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
@@ -61,7 +61,7 @@
             <value>Business Development,Call,Customer Meeting - Face to Face,Customer Meeting - Virtual,Meeting,Training,Virtual Meeting,Admin,AWS,Email,Internal Meeting,Leave,Other,Portal Follow-up,Special Projects (All Day),Travel,Vendor Meeting</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Justice</value>

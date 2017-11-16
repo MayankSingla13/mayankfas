@@ -28,10 +28,7 @@
         <field>ADDRESS1_ZIP</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
-    </columns>
-    <columns>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>

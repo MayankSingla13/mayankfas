@@ -67,7 +67,7 @@
             <value>Karen Beyer,Darren Hickman,Kelly Zimmerman,Todd Cook,Bradley Forrestel,Jennifer Rapé,Erv Koehler,Jaime Kern,Michael Gilbert,Danno Svaranowic,Eric Terrell,Eddie Mills,Jacke Raines,Thomas Ischkum,Allison Crews,Robert Back,Peter Carovillano,Dale Terry,Steve Sizemore,Jannine Wilkinson</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Army</value>

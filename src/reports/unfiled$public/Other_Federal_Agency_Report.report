@@ -38,7 +38,7 @@
             <value>Account.Customer</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Other - Federal Agency</value>
@@ -47,7 +47,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Other Federal Agency Report</name>

@@ -48,7 +48,7 @@
             <value>TN</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>State</value>

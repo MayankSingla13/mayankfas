@@ -11,7 +11,7 @@
         <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.Agency__c</groupingColumn>
+        <groupingColumn>Account.Level_1__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <secondaryGroupingColumn>ACCOUNT.NAME</secondaryGroupingColumn>
@@ -76,7 +76,7 @@
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Agriculture,Air Force,Army,Commerce,Commissions/Boards/Courts,Defense,Education,Energy,Environmental Protection Agency,General Services Administration,Health and Human Services,Homeland Security,Housing and Urban Development,Interior,Judicial,Justice,Labor,Legislative,Marines,National Aeronautics and Space Administration,National Science Foundation,Navy,Nuclear Regulatory Commission,&quot;Office of Personnel Management, U.S.&quot;,Office of the President,Other - Federal Agency,&quot;Other - Industry, Non-Profit, Associations&quot;,Small Business Administration,Social Security Administration,State and Local,State Department,To be assigned,Transportation,Treasury,Tribal Nations,U. S. Army Corps of Engineers,United States Postal Service,US Agency For International Development,Veterans Affairs</value>
@@ -96,7 +96,7 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

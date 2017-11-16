@@ -107,7 +107,7 @@
             <value>Case.Customer_Case,Case.ITS_Case,Case.NCSC_Non_Discrepancy_Case,Case.NCSC_Request_Log_File,Case.NCSC_Carrier_Claim,Case.NCSC_Discrepancy_Case,Case.NCSC_On_Hand_Freight,Case.NCSC_Price_Check,Case.NCSC_Quick_Connect,Case.GSS_Case</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Air Force</value>

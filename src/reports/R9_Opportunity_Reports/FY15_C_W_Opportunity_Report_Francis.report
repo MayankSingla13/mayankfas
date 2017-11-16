@@ -30,7 +30,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Current FY C&amp;W Opp Report - Francis</name>

@@ -11,7 +11,7 @@
         <chartType>Pie</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Account.Agency__c</groupingColumn>
+        <groupingColumn>Account.Level_1__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -82,7 +82,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Customer/Vendor Cases by Agency</name>

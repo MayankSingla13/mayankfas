@@ -16,7 +16,7 @@
         <chartType>VerticalColumnLine</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.Agency__c</groupingColumn>
+        <groupingColumn>Account.Level_1__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -178,7 +178,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>FY17 R10 AAS Closed Lost</name>

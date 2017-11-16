@@ -46,7 +46,7 @@
         <field>ACCOUNT_LAST_ACTIVITY</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>

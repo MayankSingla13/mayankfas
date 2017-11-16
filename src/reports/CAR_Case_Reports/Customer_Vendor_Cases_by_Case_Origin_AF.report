@@ -57,7 +57,7 @@
             <value>Case.Customer_Case,Case.ITS_Case,Case.GSS_Case</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Air Force</value>

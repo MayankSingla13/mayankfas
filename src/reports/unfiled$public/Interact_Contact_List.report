@@ -60,7 +60,7 @@
             <value>Contact.Customer</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency2__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>
@@ -69,7 +69,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Interact Contact List</name>

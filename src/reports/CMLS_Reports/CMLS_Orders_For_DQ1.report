@@ -46,10 +46,10 @@
         <field>FK_$Account.Treasury_Agency_Code__c</field>
     </columns>
     <columns>
-        <field>FK_$Account.Agency2__c</field>
+        <field>FK_$Account.Level_1__c</field>
     </columns>
     <columns>
-        <field>FK_$Account.Bureau2__c</field>
+        <field>FK_$Account.Level_2__c</field>
     </columns>
     <columns>
         <field>FK_$Account.Treasury_Bureau_Code__c</field>
@@ -69,7 +69,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>FK_$Account.Agency__c</field>
+        <field>FK_$Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>CMLS Orders For DQ</name>

@@ -43,7 +43,7 @@
         <field>Activity.Elapsed_Days__c</field>
     </columns>
     <columns>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
@@ -65,9 +65,6 @@
     </columns>
     <columns>
         <field>Account.Target_Account__c</field>
-    </columns>
-    <columns>
-        <field>Account.Agency__c</field>
     </columns>
     <filter>
         <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>

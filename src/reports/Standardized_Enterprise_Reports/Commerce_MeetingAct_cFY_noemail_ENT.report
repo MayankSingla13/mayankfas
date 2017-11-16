@@ -71,7 +71,7 @@
             <value>Business Development,Customer Meeting - Face to Face,Customer Meeting - Virtual,Internal Meeting,Meeting,Training,Vendor Meeting,Virtual Meeting</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Commerce</value>
@@ -80,7 +80,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

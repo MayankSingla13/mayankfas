@@ -25,7 +25,7 @@
                 <value>2</value>
             </criteriaItems>
         </filter>
-        <format>Tabular</format>
+        <format>Summary</format>
         <name>Scope Reviews with Pre-Award Review &lt;=2</name>
         <params>
             <name>co</name>
@@ -63,7 +63,7 @@
                 <value>5</value>
             </criteriaItems>
         </filter>
-        <format>Tabular</format>
+        <format>Summary</format>
         <name>Scope Reviews with Pre-Award Review &lt;=5</name>
         <params>
             <name>co</name>
@@ -101,7 +101,7 @@
                 <value>6</value>
             </criteriaItems>
         </filter>
-        <format>Tabular</format>
+        <format>Summary</format>
         <name>Scope Reviews with Pre-Award Review &gt;=6</name>
         <params>
             <name>co</name>

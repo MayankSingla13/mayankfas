@@ -5,7 +5,7 @@
         <developerName>BucketField_8019838</developerName>
         <masterLabel>:</masterLabel>
         <nullTreatment>n</nullTreatment>
-        <sourceColumnName>Account.Agency__c</sourceColumnName>
+        <sourceColumnName>Account.Level_1__c</sourceColumnName>
         <useOther>false</useOther>
         <values>
             <sourceValues>

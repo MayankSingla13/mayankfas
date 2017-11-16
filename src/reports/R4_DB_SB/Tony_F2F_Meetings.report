@@ -58,7 +58,7 @@
         <field>Account.Target_Account__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <filter>
         <booleanFilter>1 AND 2 AND 3</booleanFilter>

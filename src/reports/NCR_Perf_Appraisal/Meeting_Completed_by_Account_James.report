@@ -11,7 +11,7 @@
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.Agency__c</groupingColumn>
+        <groupingColumn>Account.Level_1__c</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -74,7 +74,7 @@
     <groupingsDown>
         <aggregateType>RowCount</aggregateType>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortByName>RowCount</sortByName>
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>

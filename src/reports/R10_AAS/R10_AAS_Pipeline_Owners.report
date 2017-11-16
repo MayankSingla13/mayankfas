@@ -38,7 +38,7 @@
         <field>STAGE_NAME</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Opportunity.Number_of_Times_Facilitated__c</field>
@@ -164,7 +164,7 @@
     <roleHierarchyFilter>FASCommissioner</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Account.Agency__c</sortColumn>
+    <sortColumn>Account.Level_1__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>

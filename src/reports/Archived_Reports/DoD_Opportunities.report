@@ -21,7 +21,7 @@
     <description>DoD Opportunities created in past 90 days</description>
     <filter>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Defense</value>

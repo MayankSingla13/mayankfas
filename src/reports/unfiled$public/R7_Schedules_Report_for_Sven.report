@@ -33,13 +33,13 @@
         <field>Opportunity.Reason_Closed__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Bureau__c</field>
     </columns>
     <columns>
-        <field>Account.Bureau2__c</field>
+        <field>Account.Level_2__c</field>
     </columns>
     <columns>
         <field>Account.Contracting_Office_ID__c</field>

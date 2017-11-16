@@ -154,7 +154,7 @@
         <field>Opportunity$Account.Active__c</field>
     </columns>
     <columns>
-        <field>Opportunity$Account.Agency__c</field>
+        <field>Opportunity$Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Opportunity$Account.AnnualRevenue</field>

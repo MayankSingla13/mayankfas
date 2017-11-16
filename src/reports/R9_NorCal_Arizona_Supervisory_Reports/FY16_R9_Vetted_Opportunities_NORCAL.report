@@ -12,7 +12,7 @@
         <chartType>VerticalColumnStackedTo100</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.Agency__c</groupingColumn>
+        <groupingColumn>Account.Level_1__c</groupingColumn>
         <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
         <secondaryGroupingColumn>OPPORTUNITY_NAME</secondaryGroupingColumn>
@@ -78,7 +78,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Desc</sortOrder>
     </groupingsDown>
     <name>Current FY - R9 Vetted Opps NORCAL</name>

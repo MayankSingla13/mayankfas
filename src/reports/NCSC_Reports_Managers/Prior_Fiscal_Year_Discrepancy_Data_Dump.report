@@ -10,7 +10,7 @@
         <field>Case.Contact_Region__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>CASE_NUMBER</field>

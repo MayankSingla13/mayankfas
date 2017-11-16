@@ -4,7 +4,7 @@
         <field>USERS.NAME</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
@@ -32,7 +32,7 @@
             <value>GA</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value></value>

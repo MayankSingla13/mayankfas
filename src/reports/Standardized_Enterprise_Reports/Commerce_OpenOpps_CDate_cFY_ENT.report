@@ -28,7 +28,7 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Bureau__c</field>
@@ -87,7 +87,7 @@
             <value>Closed Won,Closed Lost,Disqualified</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Commerce</value>

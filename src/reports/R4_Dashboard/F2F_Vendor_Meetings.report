@@ -10,7 +10,7 @@
         <field>Activity.Elapsed_Days__c</field>
     </columns>
     <columns>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>SUBJECT</field>
@@ -72,7 +72,7 @@
             <value>Prospective Vendor,R4 Vendor Community,MASTrainingVendor,US Small Business Administration (SBA)</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency2__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Prospective Vendor,R4 Vendor Community,MASTrainingVendor,US Small Business Administration (SBA)</value>

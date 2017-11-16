@@ -54,7 +54,7 @@
             <value>Philadelphia,PA Procurement Office</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency2__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>hud</value>

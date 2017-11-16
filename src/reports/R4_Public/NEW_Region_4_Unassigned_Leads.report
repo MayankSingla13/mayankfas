@@ -65,19 +65,13 @@
             <column>Lead.Highly_Engaged_Start_Time__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
-            <value>10/1/2017 12:00 AM</value>
+            <value>4/1/2017 12:00 AM</value>
         </criteriaItems>
         <criteriaItems>
             <column>EMAIL</column>
             <isUnlocked>true</isUnlocked>
             <operator>notContain</operator>
             <value>.com,.net</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>CONVERTED</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>0</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

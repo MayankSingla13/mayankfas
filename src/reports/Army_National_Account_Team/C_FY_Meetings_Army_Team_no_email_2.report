@@ -58,7 +58,7 @@
         <field>Account.Target_Account__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <filter>
         <booleanFilter>(1 AND 2) AND (3 Or 4)</booleanFilter>
@@ -75,7 +75,7 @@
             <value>Customer Meeting - Face to Face,Customer Meeting - Virtual,Meeting,Training,Vendor Meeting,Virtual Meeting,Business Development</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Army</value>

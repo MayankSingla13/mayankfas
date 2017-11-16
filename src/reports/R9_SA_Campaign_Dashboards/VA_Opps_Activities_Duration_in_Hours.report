@@ -62,7 +62,7 @@
             <value>0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity$Account.Agency__c</column>
+            <column>Opportunity$Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Veterans Affairs</value>

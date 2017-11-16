@@ -21,7 +21,7 @@
     <description>Air Force Opportunities created in the past 90 days</description>
     <filter>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>DEPARTMENT OF THE AIR FORCE</value>
@@ -41,6 +41,10 @@
     <params>
         <name>probability</name>
         <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
     </params>
     <reportType>Opportunity</reportType>
     <scope>organization</scope>

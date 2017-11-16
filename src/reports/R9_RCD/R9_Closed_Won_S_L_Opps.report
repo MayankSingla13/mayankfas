@@ -19,7 +19,7 @@
     <filter>
         <booleanFilter>(1 AND 2) OR (3 AND 2) OR (4 AND 2) OR (5 AND 2) OR (6 AND 2) OR (7 AND 2) OR (8 AND 2) OR (9 AND 2) OR (10 AND 2)</booleanFilter>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>State and Local</value>

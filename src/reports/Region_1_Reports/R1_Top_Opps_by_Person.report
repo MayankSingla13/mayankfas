@@ -26,7 +26,7 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>

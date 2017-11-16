@@ -16,7 +16,7 @@
         <field>PARENT.NAME</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Top_Level_Account__c</field>

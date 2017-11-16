@@ -25,7 +25,7 @@
         <field>ACCOUNT_ID</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <description>Opps Victories this FY and previous.  Must have success story documented</description>
     <filter>

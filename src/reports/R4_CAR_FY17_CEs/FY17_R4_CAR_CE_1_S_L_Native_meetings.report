@@ -58,7 +58,7 @@
         <field>Account.Target_Account__c</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <description>Looking at F2F for Target S&amp;Ls and Native American</description>
     <filter>

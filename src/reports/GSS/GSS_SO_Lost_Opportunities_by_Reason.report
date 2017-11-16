@@ -14,7 +14,7 @@
         <groupingColumn>Opportunity.Reason_Closed__c</groupingColumn>
         <legendPosition>Bottom</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Account.Agency__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Account.Level_1__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -84,7 +84,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>GSS SO Lost Opportunities by Reason</name>

@@ -16,7 +16,7 @@
         <chartType>VerticalColumnLine</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.Agency__c</groupingColumn>
+        <groupingColumn>Account.Level_1__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -122,7 +122,7 @@
     <groupingsDown>
         <aggregateType>Sum</aggregateType>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortByName>AMOUNT</sortByName>
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>

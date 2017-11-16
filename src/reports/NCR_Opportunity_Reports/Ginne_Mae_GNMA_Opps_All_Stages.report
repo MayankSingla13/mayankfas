@@ -10,7 +10,7 @@
         <field>CREATED</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Opportunity.Last_Stage_Change_Date__c</field>

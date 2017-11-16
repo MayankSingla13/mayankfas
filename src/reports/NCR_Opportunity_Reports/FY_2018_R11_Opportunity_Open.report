@@ -38,7 +38,7 @@
         <field>OWNER_DIVISION</field>
     </columns>
     <columns>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>CLOSE_MONTH</field>

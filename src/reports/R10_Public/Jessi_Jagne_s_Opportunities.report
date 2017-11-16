@@ -42,7 +42,7 @@
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -52,7 +52,7 @@
             <value>Jessi Jagne</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Justice,Education</value>

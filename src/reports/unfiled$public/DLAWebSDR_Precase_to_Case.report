@@ -16,7 +16,7 @@
         <field>FK_$Account.Top_Level_Account__c</field>
     </columns>
     <columns>
-        <field>FK_$Account.Agency__c</field>
+        <field>FK_$Account.Level_1__c</field>
     </columns>
     <columns>
         <field>FK_ACC_NAME</field>

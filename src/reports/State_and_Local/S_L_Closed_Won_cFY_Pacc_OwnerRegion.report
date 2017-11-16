@@ -54,7 +54,7 @@
     <filter>
         <booleanFilter>(1 or 2 or 3 or 4 or 5 or 6 or 7) and 8</booleanFilter>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>State and Local</value>

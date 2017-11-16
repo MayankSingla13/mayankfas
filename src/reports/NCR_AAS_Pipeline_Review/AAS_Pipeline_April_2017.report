@@ -7,7 +7,7 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>
@@ -121,7 +121,7 @@
     <reportType>Opportunity</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Account.Agency__c</sortColumn>
+    <sortColumn>Account.Level_1__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>

@@ -25,7 +25,7 @@
     <groupingsDown>
         <aggregateType>RowCount</aggregateType>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
         <sortByName>RowCount</sortByName>
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>

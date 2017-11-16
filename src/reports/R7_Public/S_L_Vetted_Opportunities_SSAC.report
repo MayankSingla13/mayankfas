@@ -31,7 +31,7 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>14</textSize>
-        <titleColor>#FFFFFF</titleColor>
+        <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
     <columns>
@@ -79,7 +79,7 @@
             <value>GSS - Greater Southwest Acq Center (AO)</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>State and Local</value>

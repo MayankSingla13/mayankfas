@@ -31,7 +31,7 @@
         <field>Case.Resolution_Description__c</field>
     </columns>
     <columns>
-        <field>Account.Agency2__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>CONTACT.ACCOUNT</field>
@@ -62,7 +62,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Non Discrepancies Cases with Agency</name>

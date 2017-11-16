@@ -33,7 +33,7 @@
     <description>Activities by Type and Owned</description>
     <filter>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Justice</value>

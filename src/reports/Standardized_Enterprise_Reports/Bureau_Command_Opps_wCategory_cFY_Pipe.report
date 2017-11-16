@@ -22,7 +22,7 @@
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
-        <field>Account.Agency__c</field>
+        <field>Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Account.Bureau__c</field>
@@ -63,7 +63,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.Bureau2__c</field>
+        <field>Account.Level_2__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Bureau/Command Opps_wCategory_cFY Pipe</name>

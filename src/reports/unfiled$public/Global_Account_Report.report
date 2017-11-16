@@ -24,7 +24,7 @@
     <description>To help identify Account Names with no activity in the other files, and to assign region to the Account Name</description>
     <filter>
         <criteriaItems>
-            <column>Account.Agency__c</column>
+            <column>Account.Level_1__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Justice</value>

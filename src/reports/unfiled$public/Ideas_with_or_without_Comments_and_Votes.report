@@ -25,7 +25,7 @@
         <field>Idea$CreatedBy.Account</field>
     </columns>
     <columns>
-        <field>Idea$CreatedBy.Account.Agency__c</field>
+        <field>Idea$CreatedBy.Account.Level_1__c</field>
     </columns>
     <columns>
         <field>Idea$CreatedBy.Email</field>

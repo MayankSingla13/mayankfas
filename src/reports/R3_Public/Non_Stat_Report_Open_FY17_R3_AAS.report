@@ -16,7 +16,7 @@
         <masterLabel>Customer</masterLabel>
         <nullTreatment>n</nullTreatment>
         <otherBucketLabel>Other</otherBucketLabel>
-        <sourceColumnName>Account.Agency__c</sourceColumnName>
+        <sourceColumnName>Account.Level_1__c</sourceColumnName>
         <useOther>true</useOther>
         <values>
             <sourceValues>
