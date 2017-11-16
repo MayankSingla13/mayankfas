@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.SurveyFeedbacks__r$Survey_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Id</field>
+    </columns>
+    <columns>
+        <field>Contact.SurveyFeedbacks__r.Survey_Individual_Answers__r$Question__c</field>
+    </columns>
+    <columns>
+        <field>Contact.SurveyFeedbacks__r.Survey_Individual_Answers__r$Text_Response__c</field>
+    </columns>
+    <columns>
+        <field>Contact.SurveyFeedbacks__r.Survey_Individual_Answers__r$Number_Response__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Contact.SurveyFeedbacks__r$Survey__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>OGP Benchmarking Supervisor Survey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.SurveyFeedbacks__r$Survey__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>OGP Benchmarking Non-Supervisor Survey</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Email</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact.SurveyFeedbacks__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FY16 OGP Benchmarking Q&amp;A with Date&amp;Time</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_with_Survey_Feedback_and_Indv_Answers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

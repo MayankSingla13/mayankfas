@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c.Process_Status__c</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c.Closed_Reason__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c.Send_Email_To__c</field>
+    </columns>
+    <description>NCSC Email Pre-cases Report</description>
+    <filter>
+        <criteriaItems>
+            <column>NCSCPreCaseStaging__c.Source__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>DLA</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NCSC Email Pre-cases Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$NCSCPreCaseStaging__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>ProcessInstance.ElapsedTimeInDays:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>ProcessInstance.Nodes$LastActor</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg Elapsed Days by Analyst</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>ProcessInstance.Nodes$LastActor</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>ProcessInstance.Nodes$NodeStatus</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ProcessInstance$TargetName</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$ProcessDefinition.Name</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$Status</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance.Nodes$ProcessNode</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$ElapsedTimeInDays</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance.Nodes$LastActor.Profile</field>
+    </columns>
+    <columns>
+        <field>ProcessInstance$SubmittedBy.Profile</field>
+    </columns>
+    <description>NCSC Cases Approval Process Stats</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>ProcessInstance$ProcessDefinition</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>NCSC: Contractor v2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ProcessInstance.Nodes$ProcessNode</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Total Financial Greater Than $0 Send to Contractor Review</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ProcessInstance.Nodes$LastActor</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>NCSC User</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ProcessInstance.Nodes$LastActor.Profile</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>NCSC Manager</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ProcessInstance.Nodes$NodeStatus</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ProcessInstance.Nodes$LastActor</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NCSC Cases Approval Process Stats</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>cases_with_Approval__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>ProcessInstance$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

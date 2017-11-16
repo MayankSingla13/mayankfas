@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Company_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Cases$Subject</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Cases$Type</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Cases$Subtype__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Cases$Micro_Type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contact.Prospective_Vendor,Contact.Vendor,Contact.Partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.Cases$Micro_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Schedule 03FAC Facilities Maintenance and Management</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Prospective Vendor/Vendor Contact Cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_With_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

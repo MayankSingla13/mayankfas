@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Project_Manager_Name__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Lab__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Estimated_Start_Date_rollup__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Estimated_End_Date_rollup__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Start_Date_rollup__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.End_Date_Rollup__c</field>
+    </columns>
+    <description>This report is used for GPG Dashboard and shows Green Proving Ground projects by technology category.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>IRD_GPGIS_Project__c.Technology_Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>IRD_GPGIS_Project__c.Region__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>GPG Project by Technology Category - Das</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$IRD_GPGIS_Project__c@IRD_GPGIS_Project__c.Project_Manager__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>IRD_GPGIS_Project__c.End_Date_Rollup__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

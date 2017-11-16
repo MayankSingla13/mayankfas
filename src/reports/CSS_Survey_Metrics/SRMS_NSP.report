@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SurveyFeedback__c$Survey__c</field>
+    </columns>
+    <columns>
+        <field>SurveyFeedback__c.Survey_Individual_Answers__r$Question__c</field>
+    </columns>
+    <columns>
+        <field>SurveyFeedback__c.Survey_Individual_Answers__r$Text_Response__c</field>
+    </columns>
+    <columns>
+        <field>SurveyFeedback__c$Survey_Name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>SurveyFeedback__c$Survey__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SRMS - NSP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyFeedback__c$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Survey-0000429162</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyFeedback__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyFeedback__c$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SRMS - NSP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Survey_Feedback_with_Answers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>SurveyFeedback__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

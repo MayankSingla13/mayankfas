@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Goal_Links__r$Goal__c.National_Strategy__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Goal_Links__r$Goal__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Amount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Lifetime_Amount_multi_year__c</field>
+    </columns>
+    <description>List View</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Owner</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>james harrington,tonya butler,stephanie carpenter,brandi barnes,william clayton</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Region_Opp__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NCR Opps Related to Nat Goal &amp; Strategy</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Related_Goals__c</reportType>
+    <roleHierarchyFilter>FASCommissioner</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity$Lifetime_Amount_multi_year__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Classes_Taught__c.Instructor_Name__c</field>
+    </columns>
+    <columns>
+        <field>Classes_Taught__c.CLP__c</field>
+    </columns>
+    <columns>
+        <field>Classes_Taught__c.Total_CLPs__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Classes_Taught__c.Class_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Monthly List for Darrin</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Classes_Taught__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2017-04-19</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-03-19</startDate>
+    </timeFrameFilter>
+</Report>

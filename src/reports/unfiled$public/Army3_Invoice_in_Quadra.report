@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_79027771</developerName>
+        <masterLabel>Action or not</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case.KCCS_Application_Type_Action__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New Application</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Recertification</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reapplication</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Recalculation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Add Child</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Provider Change</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rate/Attendance Change</sourceValue>
+            </sourceValues>
+            <value>Family Action Cases</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Subsidy_Intake</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Email,CCS Army</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Invoice</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.KCCCS_Processing_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Processing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.KCCS_Sub_Processing_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Quadra Update</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Army3  Invoice in Quadra</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

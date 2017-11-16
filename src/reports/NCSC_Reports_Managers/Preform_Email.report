@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>NCSC Emailbox,Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Julie Brown-Potts,MaryBeth Byland,Elizabeth Campbell,Kelly Curran,Tracy Elliott,Tammy Empson,Christina Evans,Barbara Freeland,Todd Grable,Carlene Gray,Trent Hagen,Stacey Highfill,Angela Hill,Caprice Hill,Megan Hughes,Vinni Jathaul,Angela M Jones,Julie Lewis,Traci Madden,Damian Miller,Tricia Moffett,Michael Neering,Janice Noland,Lance Overfield,jason pearson,Leena Pecina,rebekah perron,amy powers,Christine Poynter,Kristin Rathbone,Timothy Robinson,Chandelle Ross,Jeffrey Smith,kelley stitt,Michael Sulllivan,melody suthers,Brigitte Weaver,shannon williams,todd yarrow,Valerie Young,mary byland,meleigh gray,angela jones,angelina pecina,michael sullivan,patricia moffett</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Preform Email</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

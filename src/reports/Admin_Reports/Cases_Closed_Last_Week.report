@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_92459015</developerName>
+        <masterLabel>Case Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case$Owner</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CEO SF Triage Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FASforce Administrator</sourceValue>
+            </sourceValues>
+            <value>1. Intake</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CEO SF High Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF Medium Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF VISION Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF Urgent Queue</sourceValue>
+            </sourceValues>
+            <value>2. Triaged</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrette Anderson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mayank Singla</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ross Blair</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Spengler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jessie Magat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sivarama Putta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nithin Kotagudda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Pick-Aluas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lekha Santhanam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Swati Chandna</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Srinivas Kode</sourceValue>
+            </sourceValues>
+            <value>3. Assigned</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>James Ward</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF Backlog Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF VISION Backlog Queue</sourceValue>
+            </sourceValues>
+            <value>4. Backlog</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>Case$Execution_Order__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <columns>
+        <field>Case$ClosedDate</field>
+    </columns>
+    <columns>
+        <field>Case$Contact</field>
+    </columns>
+    <columns>
+        <field>Case$Type</field>
+    </columns>
+    <columns>
+        <field>Case$Tier__c</field>
+    </columns>
+    <columns>
+        <field>Case$Application_Module__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case$Status</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.SF_System_Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Application_Module__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>VISION</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Nithin Kotagudda,Srinivas Kode,SNA LSathanam</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Execution_Order__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Priority</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases Closed Last Week</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

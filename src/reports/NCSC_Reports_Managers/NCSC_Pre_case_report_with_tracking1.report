@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c.Received_Remarks_Comments__c</field>
+    </columns>
+    <description>NCSC Pre case report with tracking</description>
+    <filter>
+        <criteriaItems>
+            <column>NCSCPreCaseStaging__c.Process_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NEW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NCSCPreCaseStaging__c.Send_Email_To__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>vendorresponse@gsa.gov</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NCSCPreCaseStaging__c.Received_Remarks_Comments__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>tracking,fedex,ups,shipped</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NCSC Pre case report with tracking</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$NCSCPreCaseStaging__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>NCSCPreCaseStaging__c.Received_Remarks_Comments__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>NCSCPreCaseStaging__c.Accepted_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

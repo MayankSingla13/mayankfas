@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_TYPE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Campaign.Actual_Attendance__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 or 2 or 3 or 4 or 5 or 6 or 7 or 8) AND 9</booleanFilter>
+        <criteriaItems>
+            <column>Campaign.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>OSBU - Disadvantaged/8a</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>OSBU - Woman Owned</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>OSBU - HUBZone</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>OSBU - Service Disabled Veteran</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>OSBU - Small Business</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>OSBU - Veteran</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>OSBU - All</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>OSBU - Acquisition Workforce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Campaign.Events</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>FiscalYear</dateGranularity>
+        <field>Campaign.Start_Date_Time_Main__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Actual Attendance By FY</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignList</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+</Report>

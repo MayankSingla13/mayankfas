@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SurveyFeedback__c$Name</field>
+    </columns>
+    <description>Total count of surveys for Supervisor and Non-Supervisor surveys.</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>SurveyFeedback__c$Survey__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>OGP Benchmarking Non-Supervisor Survey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyFeedback__c$Survey__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>OGP Benchmarking Supervisor Survey</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyFeedback__c$Survey__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OGP Benchmark 2 Survey Totals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Survey_Feedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>SurveyFeedback__c$CreatedDate</dateColumn>
+        <endDate>2016-04-27</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

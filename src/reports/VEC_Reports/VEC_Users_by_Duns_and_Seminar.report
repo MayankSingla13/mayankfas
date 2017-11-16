@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>User</joinTable>
+        </blockInfo>
+        <columns>
+            <field>User.MASTrainingAccounts__r$DUNS__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>User.MASTrainingAccounts__r$DUNS__c</column>
+                <isUnlocked>true</isUnlocked>
+                <operator>notEqual</operator>
+                <value></value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Users with VEC Training Accounts block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Users_with_VEC_Training_Accounts__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>User$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>User</joinTable>
+        </blockInfo>
+        <columns>
+            <field>User.Transcripts__r$Seminar__c</field>
+        </columns>
+        <format>Summary</format>
+        <name>Users With Seminar Transcript Lo block 2</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Users_With_Seminar_Transcript_Logs__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>User$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>User</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>VEC Users by Duns and Seminar</name>
+    <reportType>Users_with_VEC_Training_Accounts__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

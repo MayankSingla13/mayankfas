@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Dashboard$Folder</field>
+    </columns>
+    <columns>
+        <field>Dashboard$Title</field>
+    </columns>
+    <columns>
+        <field>Dashboard$Description</field>
+    </columns>
+    <description>CRM Dashboards List- 20170324 filtered on opportunity, accounts and regions</description>
+    <filter>
+        <criteriaItems>
+            <column>Dashboard$Folder</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,CAR CRM Business Intelligence,Customer Case Dashboards,Draft Dashboards,Drafts/Clones,Drew C,Enterprise Dashboards - Standardized,Executive Dashboards,Executive Dashboards - User Lic,GSA Campaign Dashboard,My Personal Dashboard,National Strategies - Account Plans,NCR Dashboard,NCSC Dashboard (Managers),NCSC Dashboards,NCSC Dashboards Manager,OSBU Case Dashboards,My Personal Dashboards,GPG Dashboard,Public Dashboards</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Filtered CRM Dashboards Folders</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Dashboards__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Dashboard$CreatedDate</dateColumn>
+        <interval>INTERVAL_PREV2FY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SurveyFeedback__c$Name</field>
+    </columns>
+    <columns>
+        <field>SurveyFeedback__c$IT_CSC_Case_Comments__c</field>
+    </columns>
+    <columns>
+        <field>SurveyFeedback__c$IT_CSC_Case_Not_Resolved_Comments__c</field>
+    </columns>
+    <description>ITS Case Survey Comments</description>
+    <filter>
+        <criteriaItems>
+            <column>SurveyFeedback__c$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>SurveyFeedback__c.IT_CSC_Case_Survey</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyFeedback__c$IT_CSC_Case_Resolution_Satisfied__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ITS Case Survey Comments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ITS_Case_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>SurveyFeedback__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

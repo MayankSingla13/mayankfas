@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>AWM_Funding_Document__c.Amendement_No__c</field>
+    </columns>
+    <columns>
+        <field>AWM_Funding_Document__c.Signature_Date__c</field>
+    </columns>
+    <columns>
+        <field>AWM_Funding_Document__c.Region__c</field>
+    </columns>
+    <columns>
+        <field>AWM_Funding_Document__c.Client_Agency__c</field>
+    </columns>
+    <description>For Brian Bailey&apos;s reporting request</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>12RT0028</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Funding Docs for 12RT0028</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$AWM_Funding_Document__c@AWM_Funding_Document__c.Project__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>AWM_Funding_Document__c.Signature_Date__c</dateColumn>
+        <endDate>2013-10-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2012-10-01</startDate>
+    </timeFrameFilter>
+</Report>

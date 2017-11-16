@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>User.Event_Approver__c</field>
+    </columns>
+    <columns>
+        <field>User.class_approver__c</field>
+    </columns>
+    <columns>
+        <field>MARKETING_USER</field>
+    </columns>
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <columns>
+        <field>User.Salesforce_Champion__c</field>
+    </columns>
+    <columns>
+        <field>User.Manager_Name__c</field>
+    </columns>
+    <columns>
+        <field>User.Assigned_Permission_Sets__c</field>
+    </columns>
+    <description>Users with Campaign access who may need approvers</description>
+    <filter>
+        <booleanFilter>(1 or 2 or 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>User.Assigned_Permission_Sets__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Campaign Management - CRED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Assigned_Permission_Sets__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Campaign Category Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Assigned_Permission_Sets__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Training Central - CRED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FIRST_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>SNA</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Need Approvers</name>
+    <params>
+        <name>active</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <sortColumn>FIRST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

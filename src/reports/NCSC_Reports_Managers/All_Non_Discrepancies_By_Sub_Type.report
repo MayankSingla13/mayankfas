@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTACT_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <columns>
+        <field>Case.Micro_Type__c</field>
+    </columns>
+    <description>Non discrepancies, quick connects, gss and ITS cases closed by date</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.NCSC_Non_Discrepancy_Case,Case.ITS_Case,Case.NCSC_Request_Log_File,Case.NCSC_Carrier_Claim,Case.NCSC_On_Hand_Freight,Case.NCSC_Price_Check,Case.NCSC_Quick_Connect,Case.OSBU_IRD,Case.GSS_Case,Case.NCSC_PBS_Case</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>All Non Discrepancies By Sub Type</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <endDate>2014-07-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-04-01</startDate>
+    </timeFrameFilter>
+</Report>

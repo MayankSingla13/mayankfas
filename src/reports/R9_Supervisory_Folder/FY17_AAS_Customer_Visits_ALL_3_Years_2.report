@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND (5 OR( 6 AND 7)))</booleanFilter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Elizabeth Belenis,Michelle Stansberry,Mark Reiss,Florence Francis,Charles Lee,Darlene Parks,Michele Tobin,Maria Rodriguez,Ronald Eisley,Sidney Frazier,Lynn Fujimoto,Kristine Fujishige,Cynthia McKeague,Brandy Untalan,Gloria Wong,Clint Steele,Kimberly Sant,Jennifer Epps,Kristine Alexander</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer Meeting - Face to Face</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DESCRIPTION</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>AAS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>AAS - Regional AAS Division</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>START_DATE_TIME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>10/1/2015 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>FiscalYear</dateGranularity>
+        <field>START_DATE_TIME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FY17 - AAS Customer Visits ALL 3 Years 2</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>e</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountActivity</reportType>
+    <roleHierarchyFilter>Region9RCD</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2017-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-10-01</startDate>
+    </timeFrameFilter>
+</Report>

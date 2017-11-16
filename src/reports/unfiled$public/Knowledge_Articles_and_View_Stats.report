@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticle$Title</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle$UrlName</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle.ViewStats$ViewCount</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle$CaseAssociationCount</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle.ViewStats$Channel</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle.ViewStats$NormalizedScore</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle$LastModifiedBy</field>
+    </columns>
+    <description>Knowledge Articles and View Stats</description>
+    <format>Tabular</format>
+    <name>Knowledge Articles and View Stats</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Articles_and_View_Stats__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>KnowledgeArticle.ViewStats$ViewCount</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticle$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Campaign.HierarchyNumberOfLeads:SUM + Campaign.NumberOfContacts:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Number of Contacts and Leads trained</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total # Trained</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Campaign.Total_CLP_Credits__c:SUM * (Campaign.NumberOfContacts:SUM+Campaign.NumberOfLeads:SUM)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total # CLPs Administered</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#CCFFFF</backgroundColor1>
+        <backgroundColor2>#CCCCFF</backgroundColor2>
+        <backgroundFadeDir>TopToBottom</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Campaign.CampaignClasses__r$Class__c</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Total # Trained - Current FY</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Campaign$Start_Date_Time_Main__c</field>
+    </columns>
+    <columns>
+        <field>Campaign$Owner</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignClasses__r$Instructor__c</field>
+    </columns>
+    <description>Details all &quot;green&quot; CLP classes in the current FY with total # of members taught</description>
+    <filter>
+        <criteriaItems>
+            <column>Campaign$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Campaign.Customer_Training,Campaign.Webinar_Training</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.CampaignClasses__r$Class__c.Category__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>Green</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Start_Date_Time_Main__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign.CampaignClasses__r$Class__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total # Taught - Green CLP Classes</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_with_Classes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Campaign$Start_Date_Time_Main__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

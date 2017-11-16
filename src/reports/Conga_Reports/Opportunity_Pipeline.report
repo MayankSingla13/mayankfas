@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account_Plan__c.Partnering_Opportunities__r$Id</field>
+    </columns>
+    <columns>
+        <field>Account_Plan__c.Partnering_Opportunities__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account_Plan__c.Partnering_Opportunities__r$Type__c</field>
+    </columns>
+    <columns>
+        <field>Account_Plan__c.Partnering_Opportunities__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Account_Plan__c.Partnering_Opportunities__r$Opportunity_Description__c</field>
+    </columns>
+    <columns>
+        <field>Account_Plan__c.Partnering_Opportunities__r$Client_Value_Quantification__c</field>
+    </columns>
+    <columns>
+        <field>Account_Plan__c.Partnering_Opportunities__r$Obtained_Client_Formal_Approval__c</field>
+    </columns>
+    <description>Report used in Conga to create Opportunity Pipeline report</description>
+    <filter>
+        <criteriaItems>
+            <column>Account_Plan__c$Id</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Opportunity Pipeline</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Plans_with_Partnering_Opportunities_with_O__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account_Plan__c.Partnering_Opportunities__r$Id</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account_Plan__c$Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>MASTrainingAccount__c.User__c</field>
+    </columns>
+    <columns>
+        <field>MASTrainingAccount__c.GSA_Contract_number__c</field>
+    </columns>
+    <columns>
+        <field>MASTrainingAccount__c.DUNS__c</field>
+    </columns>
+    <columns>
+        <field>MASTrainingAccount__c.Small_Business_Category__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <description>This report gives the users that were created based on the date range</description>
+    <format>Tabular</format>
+    <name>VEC External Users Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MASTrainingAccount__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

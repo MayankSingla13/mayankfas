@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>Goal__c.Priority__c</field>
+    </columns>
+    <columns>
+        <field>Goal__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Goal__c.Progress_Indicator__c</field>
+    </columns>
+    <columns>
+        <field>Goal__c.Metric__c</field>
+    </columns>
+    <columns>
+        <field>National_Strategy__c.Year__c</field>
+    </columns>
+    <columns>
+        <field>CHILD_CREATED_NAME</field>
+    </columns>
+    <description>Please do not modify - this report is used on the Opportunity page layout.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>National_Strategy__c.Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>National Strategy Goals - Opportunity</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$National_Strategy__c$Goal__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Goal__c.Priority__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

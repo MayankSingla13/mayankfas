@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign$Id</field>
+    </columns>
+    <columns>
+        <field>Campaign$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign$End_Date_Time_Main__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignClasses__r$Class__c.CLP_Credits__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignClasses__r$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignClasses__r$Instructor__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Campaign$Region__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>4</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>R4 BCO Classes taught</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_with_or_without_Classes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Campaign$End_Date_Time_Main__c</dateColumn>
+        <interval>INTERVAL_PREVCUR2FY</interval>
+    </timeFrameFilter>
+</Report>

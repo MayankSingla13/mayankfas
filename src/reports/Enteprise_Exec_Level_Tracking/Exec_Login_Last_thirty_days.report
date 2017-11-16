@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>USERNAME</field>
+    </columns>
+    <columns>
+        <field>ALIAS</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>LAST_LOGIN</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Al Finley,Amanda Fredriksen,Bill Sisk,Donna Jenkins,Erv Koehler,Frank Tiller,George Prochaska,Houston Taylor,Jeff Lau,Jeff Thurston,Joe Nickerson,Karen Kopf,Kay Ely,Kim Brown,Linda Allen,Linda Chero,Mark Day,Marty Jennings,Mary Davie,Mary Ruwwe,Maynard Crum,Penny Grout,Tiffany Hixson,Tim Fleming</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_LOGIN</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>6/1/2015 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Exec Login Last thirty days</name>
+    <params>
+        <name>active</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <sortColumn>LAST_LOGIN</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>IRD_GPGIS_Project__c$Project_Manager__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c$Technology_Category__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Approved_Technologies__r$Name</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Approved_Technologies__r$GPG_Application__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Approved_Technologies__r$Applicant_Company__c</field>
+    </columns>
+    <columns>
+        <field>IRD_GPGIS_Project__c.Approved_Technologies__r$Applicant_Contact__c</field>
+    </columns>
+    <description>This report shows Green Proving Ground projects with or without technologies.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>IRD_GPGIS_Project__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>GPG Project and Technology</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>GPG_Project_with_or_without_Technology__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>IRD_GPGIS_Project__c$End_Date_Rollup__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

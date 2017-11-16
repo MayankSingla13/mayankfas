@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$Case.Claim_Number__c</field>
+    </columns>
+    <columns>
+        <field>FK_CASE_STATUS</field>
+    </columns>
+    <columns>
+        <field>FK_$Case.BOL_Number__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Case.Total_Carrier_Amount__c</field>
+    </columns>
+    <columns>
+        <field>FK_CASE_CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>FK_$Case.Carrier_Address__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Case.NCSC_Carrier_Claim_Address__c</field>
+    </columns>
+    <description>Carrier Claims Mode B to Finance</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Case.Claim_Number__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>TP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Case.Mode_of_Transportation__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>&quot;B - MOTOR, LTL&quot;</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Carrier Claims Mode B to Finance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Carrier_Claim_Request__c@Carrier_Claim_Request__c.Carrier_Claim__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>FK_CASE_CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

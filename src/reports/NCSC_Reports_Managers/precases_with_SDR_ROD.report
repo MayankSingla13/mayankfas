@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>NCSCPreCaseStaging__c.Cases__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c$Received_Document_Number__c</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c$Document_Identifier__c</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c.Cases__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c$Subject__c</field>
+    </columns>
+    <columns>
+        <field>NCSCPreCaseStaging__c.Cases__r$Subject</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>NCSCPreCaseStaging__c.Cases__r$Subject</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>SDR(ROD)</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>NCSCPreCaseStaging__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>precases with SDR(ROD)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Precases_with_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>NCSCPreCaseStaging__c.Cases__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign.Point_of_Contact__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_OWNER</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Full_Name__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.EmailAddress__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Campaign.Point_of_Contact__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>William Clayton,Tesi Giasson,James Harrington,Stephanie Carpenter,Tonya Butler,Leila Beigzadeh,Brandi Barnes</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Campaign Contact Report</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+</Report>

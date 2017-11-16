@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>FISCAL_QUARTER</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <description>This reports shows all newly created opportunities from the past 30 days</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Business_Line__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>includes</operator>
+            <value>GSS - Admin Services &amp; Office Suppl (AO),GSS - Ctr for Innovative Acq Development,GSS - Facilities Maint and Hardware (AO),GSS - FSSI BMO,GSS - FSSI JanSan,GSS - FSSI MRO,GSS - FSSI OS2,GSS - FSSI Print Management,GSS - Greater Southwest Acq Center (AO),GSS - Int Workplace Acq Ctr (IWAC),GSS - Management Services Acq Ctr (AO),GSS - OASIS (AO),GSS - OASIS Small Business (AO)</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>GSS - AO Opportunities Last 30 Days</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

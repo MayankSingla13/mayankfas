@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Class__c$Name</field>
+    </columns>
+    <columns>
+        <field>Class__c.Class_History__r$Name</field>
+    </columns>
+    <columns>
+        <field>Class__c.Class_History__r.ClassTaughtSurveys__r$Name</field>
+    </columns>
+    <description>Total 34 Classes Taught</description>
+    <filter>
+        <criteriaItems>
+            <column>Class__c.Class_History__r$Instructor__c.Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Warren Richey</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Class__c.Class_History__r$Campaign__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FY17 CE1  Warren R - Classes Taught</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Classes_with_classes_taught_and_instructors__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Class__c.Class_History__r$Start_Date_Time__c</dateColumn>
+        <interval>INTERVAL_PREVFY</interval>
+    </timeFrameFilter>
+</Report>

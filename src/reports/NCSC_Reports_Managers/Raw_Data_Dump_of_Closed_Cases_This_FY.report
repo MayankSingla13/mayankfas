@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case.Days_to_Close__c</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.ITS_Case,Case.NCSC_Non_Discrepancy_Case,Case.NCSC_Request_Log_File,Case.NCSC_Carrier_Claim,Case.NCSC_Discrepancy_Case,Case.NCSC_On_Hand_Freight,Case.NCSC_Price_Check,Case.NCSC_Quick_Connect,Case.OSBU_IRD,Case.GSS_Case,Case.NCSC_PBS_Case,Case.NCSC_Order_Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed,Archived</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Raw Data Dump of Closed Cases This FY</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

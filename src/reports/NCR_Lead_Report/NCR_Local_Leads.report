@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <description>Delete .com, .org (check about .edu)</description>
+    <filter>
+        <criteriaItems>
+            <column>Lead.Region__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>11</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>VA,MD,DC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>IT,Technology,Telecom,Network,Acquisition,Contract,Procurement,Hardware,cyber,cyber security</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>IT Specialist,admin,administrative,territory,facility,facilities,scientist,kitchen,site,field,physical,sports,fitness,auditor,architect,writer,unit chief,transportation security specialist,supply technician</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>.com,net,org</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NCR Local Customer Leads</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>COMPANY</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign$Campaign_Number__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Attributes__r$Publication_Title__c</field>
+    </columns>
+    <columns>
+        <field>Campaign$Owner</field>
+    </columns>
+    <columns>
+        <field>Campaign$Point_of_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Attributes__r$Inventory_Ordered__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Attributes__r$Available_Issue__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Attributes__r$Reorder_Quantity__c</field>
+    </columns>
+    <description>Shows all stocked publication quantity and reorder quantity.  Weekly report sent to all.</description>
+    <filter>
+        <criteriaItems>
+            <column>Campaign.Campaign_Attributes__r$Publication_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Available</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Client_Office__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CMLS:  Available/Reorder Quantity</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_with_Campaign_Attributes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Campaign.Campaign_Attributes__r$Available_Issue__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Campaign$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

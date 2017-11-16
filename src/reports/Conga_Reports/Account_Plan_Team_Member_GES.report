@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_CUSTENT_ID</field>
+    </columns>
+    <columns>
+        <field>Account_Plan_Team_Member__c.Name__c</field>
+    </columns>
+    <columns>
+        <field>Account_Plan_Team_Member__c.Region__c</field>
+    </columns>
+    <columns>
+        <field>Account_Plan_Team_Member__c.Title__c</field>
+    </columns>
+    <columns>
+        <field>Account_Plan_Team_Member__c.Team_Role__c</field>
+    </columns>
+    <columns>
+        <field>Account_Plan_Team_Member__c.Type__c</field>
+    </columns>
+    <description>Team Member report for  GSA Executive Sponsor</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_CUSTENT_ID</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Account Plan - Team Member - GES</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Account_Plan_Team_Member__c@Account_Plan_Team_Member__c.Account_Plan__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

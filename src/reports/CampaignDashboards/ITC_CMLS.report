@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CMLSCampaign_Attribute__c.Inventory_Ordered__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Inventory Ordered</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>CMLSCampaign_Attribute__c.Site_PDF_visits__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total PDF Visits</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>Campaign$Campaign_Number__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Attributes__r$Publication_Title__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Attributes__r$Site_PDF_visits__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Attributes__r$Inventory_Ordered__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Campaign_Attributes__r$Available_Issue__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Campaign.Campaign_Attributes__r$Publication_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Available,PDF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Client_Office__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>QTA - ITS Acquisition Operations,QTC - ITS Network Services,QTD - ITS Planning and Portfolio Management,QTF - ITS Schedule Programs,QTGa - ITS Strategic Programs: GWAC,QTGb - ITS Strategic Programs: Strategic Solutions and Security Services,QT - ITS</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Parent</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ITC CMLS</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_with_Campaign_Attributes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Campaign.Campaign_Attributes__r$Site_PDF_visits__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Campaign$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

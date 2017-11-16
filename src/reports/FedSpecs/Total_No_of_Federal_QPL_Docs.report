@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FedSpecs__c$Name</field>
+    </columns>
+    <columns>
+        <field>FedSpecs__c$Document_Number__c</field>
+    </columns>
+    <columns>
+        <field>FedSpecs__c$Document_Type__c</field>
+    </columns>
+    <columns>
+        <field>FedSpecs__c$Document_Title__c</field>
+    </columns>
+    <columns>
+        <field>FedSpecs__c$Date__c</field>
+    </columns>
+    <columns>
+        <field>FedSpecs__c$Document_Status__c</field>
+    </columns>
+    <columns>
+        <field>FedSpecs__c$FSC__c</field>
+    </columns>
+    <columns>
+        <field>FedSpecs__c$Preparing_Activity__c</field>
+    </columns>
+    <columns>
+        <field>FedSpecs__c$Eng_Branch__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FedSpecs__c$Document_Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Federal QPLs</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Total No. of Federal QPL Docs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FedSpecs_Report_Type_With_all_fields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>FedSpecs__c$Date_of_Amendment__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Certificate_Sent_Date__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Survey_Sent_Date__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.CLP_Credits_Earned__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Classes_Attended__c</field>
+    </columns>
+    <columns>
+        <field>MEMBER_STATUS</field>
+    </columns>
+    <description>LINK REPORT: This report is used for the CLP/ Survey Sent Report link on the Campaign record page.  Please do not modify.</description>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_ID</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LINK: CLP/ Survey Sent Report</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignWithCampaignMembers</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CampaignMember.Certificate_Sent_Date__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

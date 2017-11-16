@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Applicant_Company__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Applicant_Name__c</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Applicant_Email__c</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Technology_Category__c</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Technology_Category_Other__c</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Application_Status__c</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Abandon_Reason__c</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Application_Score__c</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Application_Rank__c</field>
+    </columns>
+    <columns>
+        <field>GPGIS_Application__c.GPGIS_Climatic_Operational_Constraints__c</field>
+    </columns>
+    <description>This report shows all Green Proving Ground Applications.</description>
+    <format>Summary</format>
+    <name>GPG Applications</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$GPGIS_Application__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_92459015</developerName>
+        <masterLabel>Case Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case$Owner</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CEO SF Triage Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FASforce Administrator</sourceValue>
+            </sourceValues>
+            <value>1. Intake</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CEO SF High Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF Medium Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF VISION Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF Urgent Queue</sourceValue>
+            </sourceValues>
+            <value>2. Triaged</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrette Anderson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mayank Singla</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ross Blair</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Spengler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jessie Magat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sivarama Putta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nithin Kotagudda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Pick-Aluas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lekha Santhanam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Swati Chandna</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Srinivas Kode</sourceValue>
+            </sourceValues>
+            <value>3. Assigned</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>James Ward</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF Backlog Queue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CEO SF VISION Backlog Queue</sourceValue>
+            </sourceValues>
+            <value>4. Backlog</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <columns>
+        <field>Case$Status</field>
+    </columns>
+    <columns>
+        <field>Case$Actual_Hours_to_Resolve__c</field>
+    </columns>
+    <columns>
+        <field>Case$Priority</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Case$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Case$RecordType</field>
+    </columns>
+    <description>filtered by case record type 4/23/2015</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+        <criteriaItems>
+            <column>Case$Status</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Closed,Archived,Escalated to Dev Team,Escalated to COE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>CEO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>VISION</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>ITS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>10/1/2014 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$LastModifiedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>NCSC SystemInterface</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.NCSC_Discrepancy_Case,Case.Guident_BO_Support,Case.VEC_Cases,Case.ITS_Case,Case.NCSC_Non_Discrepancy_Case,Case.NCSC_Request_Log_File,Case.NCSC_Carrier_Claim,Case.NCSC_On_Hand_Freight,Case.NCSC_Price_Check,Case.NCSC_Quick_Connect,Case.OSBU_IRD,Case.GSS_Case,Case.NCSC_PBS_Case,Case.NCSC_PDAM,Case.NCSC_Order_Management</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_92459015</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CEO SF Case Team Report - v.2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Case$Status</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

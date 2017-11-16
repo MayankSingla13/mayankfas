@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Campaign.NumberOfContacts:SUM + Campaign.NumberOfLeads:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Sum of leads and contacts associated w/ campaign</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Leads/Contacts</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Campaign.ActualCost:SUM / (Campaign.NumberOfContacts:SUM + Campaign.NumberOfLeads:SUM)</calculatedFormula>
+        <datatype>currency</datatype>
+        <description>Actual cost divided by total number attendees</description>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>Campaign$Name</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Cost per lead/contact</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Campaign$Name</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Huge</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Cost per Lead Contacted</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Campaign.LeadCampaignMembers$Owner.Name</field>
+    </columns>
+    <columns>
+        <field>Campaign$Region__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.LeadCampaignMembers$Owner.FAS_Portfolio_Integrator_Office__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.LeadCampaignMembers$Owner.Region__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.LeadCampaignMembers$Status</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Campaign$NumberOfConvertedLeads</field>
+    </columns>
+    <columns>
+        <field>Campaign.LeadCampaignMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.LeadCampaignMembers$LeadSource</field>
+    </columns>
+    <columns>
+        <field>Campaign.LeadCampaignMembers$Rating</field>
+    </columns>
+    <columns>
+        <field>Campaign$ActualCost</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Campaign$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Campaign.Events</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Owner</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Velma Shipp,Darlene Upshaw,Felicia Gibson,Tina Johnson,Grant Knutson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.LeadCampaignMembers*Lead$Job_Category__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Vendor Representatives</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Start_Date_Time_Main__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$NumberOfLeads</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Average cost per Lead Contacted</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_with_All_Lead_and_Lead_Owner_info__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <sortColumn>Campaign.LeadCampaignMembers$Owner.Region__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Campaign$Start_Date_Time_Main__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

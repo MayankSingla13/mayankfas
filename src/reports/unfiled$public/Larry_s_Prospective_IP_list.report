@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$City</field>
+    </columns>
+    <columns>
+        <field>Lead$State</field>
+    </columns>
+    <columns>
+        <field>Lead$LastActivityDate</field>
+    </columns>
+    <columns>
+        <field>Lead.Activities$Subject</field>
+    </columns>
+    <description>For Regions 1, 2 and 3 but not Virginia</description>
+    <filter>
+        <criteriaItems>
+            <column>Lead$Region__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1,2,3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$Region__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>VA,Virginia</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Larry&apos;s SD/VOSB Prospective IP list</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_and_lead_owners__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lead$ConvertedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
