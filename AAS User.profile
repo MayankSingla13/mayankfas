@@ -5,7 +5,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>AAC__c.AAC_Description__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
